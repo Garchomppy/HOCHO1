@@ -2,8 +2,8 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-export default defineConfig({
-  base: '/webpage/', // Set base for deployment subfolder, change to '/' if deploying at root
+export default defineConfig(({ mode }) => ({
+  base: mode === 'development' ? '/' : '/webpage/', // Tự động base cho local/dev vs build
   plugins: [react()],
   define: {
     global: 'window', // Polyfill để ánh xạ global thành window
@@ -26,4 +26,4 @@ export default defineConfig({
       }
     },
   }
-});
+}));
