@@ -29,4 +29,3 @@ npm install sockjs-client stompjs
 npm install lodash
 npm install react-country-flag
 
-```
