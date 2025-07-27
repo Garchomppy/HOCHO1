@@ -14,12 +14,12 @@ export default defineConfig(({ mode }) => ({
     open: true,
     proxy: {
       '/api': {
-        target: 'https://hocho.azurewebsites.net/',
+        target: 'http://54.206.70.171:8080/',
         changeOrigin: true,
         secure: false,
       },
       '/ws': {
-        target: 'https://hocho.azurewebsites.net/',
+        target: 'http://54.206.70.171:8080/',
         ws: true,
         changeOrigin: true,
         secure: false
