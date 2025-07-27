@@ -67,8 +67,8 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/api/auth/user",
                                 "/api/time-restriction/**",
-                                "api/teacher/course",
-                                "api/parent-child",
+                                "/api/teacher/course",
+                                "/api/parent-child",
                                 "/api/messages/**").authenticated()
                         .requestMatchers("/error").permitAll()
                         .anyRequest().authenticated()
