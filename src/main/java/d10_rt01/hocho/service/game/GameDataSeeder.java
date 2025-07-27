@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+// @Component
 public class GameDataSeeder implements CommandLineRunner {
 
     @Autowired
